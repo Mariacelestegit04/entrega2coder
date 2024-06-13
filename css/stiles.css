@@ -12,17 +12,30 @@ header {
     align-items: center;
     background-color: #521313;
     font-family: "Oswald", sans-serif;
+    font-weight: lighter;
+    color: aliceblue;
     font-size: 25px;
-    
+
 }
 
+.contenido {
 
+    width: 75vw;
+    max-width: 800px;
+    min-width: 250px;
+    position: center;
+    margin: 50px auto;
+
+}
+
+/*body todas*/
 .body {
     height: 100%;
     width: 100%;
     font-size: x-large;
     background-clip: content-box;
     background-color: darkorange;
+
 }
 
 .encabezado {
@@ -40,6 +53,18 @@ header {
 
     }
 
+    .botton {
+        background: black display-center;
+        margin: 40px;
+        padding-bottom: 0%;
+        width: 150px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .botton:hover {
+        background: blue;
+    }
 
 }
 
@@ -49,15 +74,17 @@ header {
     list-style: none;
     background-color: aliceblue;
 }
-a:link{
+
+a:link {
     background-color: blue;
 }
-a:visited{
+
+a:visited {
     background-color: chocolate;
 }
-a:hover{
-    background-color:aliceblue
-    
+
+a:hover {
+    background-color: aliceblue
 }
 
 
@@ -68,36 +95,54 @@ a:hover{
 
 }
 
+/*imagen pagina principal*/
+.principal {
+    justify-self: flex-end;
+    border-style: groove;
+    border-color: black;
+
+
+}
 
 .galeria img {
     width: 100%;
     height: 100%;
-    max-height:500px;
+    max-height: 500px;
 }
 
 
 .footer {
 
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        border: 30PX solid font-family "Oswald", sans-serif;
-        background-color : #521313;}
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 30PX solid font-family "Oswald", sans-serif;
+    color: aliceblue;
+    background-color: #521313;
+}
+
 /*pagina2 nosotros*/
-.nosotros img {
-    width: 20%;
-    height: 20%;
+
+.nosotro {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
 }
-.nosotros {
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
-    background-color: antiquewhite;
+
+.card {
+    width: 60;
+    margin: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: aliceblue;
+
 }
+
 
 /*pagina3 menu*/
 
 /*Pagina4 golosos*/
-.galeria{
+.galeria {
     background-color: blanchedalmond;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
@@ -105,43 +150,48 @@ a:hover{
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-template-areas: 
-    "item1 item2 item3"
-    "item4 item5 item6";
-    grid-gap:"row-gap";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "item1 item2 item3"
+        "item4 item5 item6";
+    grid-gap: "row-gap";
     background-color: blueviolet;
-    
 
-.item1{
-        grid-area: item1;   
+
+    .item1 {
+        grid-area: item1;
     }
-    .item2{
+
+    .item2 {
         grid-area: item2;
     }
-    .item3{
+
+    .item3 {
         grid-area: item3;
-        
+
     }
-    .item4{
+
+    .item4 {
         grid-area: item4;
     }
-    .item5{
+
+    .item5 {
         grid-template-columns: item5;
     }
-    .item6{
+
+    .item6 {
         grid-area: item6;
     }
 }
 
 /*pagina5-contacto*/
-.main-contacto{
+.main-contacto {
 
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     justify-content: center;
-color: aliceblue;
+    color: aliceblue;
 }
 
 
@@ -151,15 +201,16 @@ color: aliceblue;
     header {
         background-color: blue;
         justify-content: space-around;
+        justify-content: center;
     }
+
     .navbar {
         justify-content: center;
         align-items: center;
     }
 }
 
-@media(max-width: 768px) and (orientation:landscape) 
-{
+@media(max-width: 768px) and (orientation:landscape) {
     header {
         flex-direction: column;
         justify-content: center;
@@ -172,9 +223,7 @@ color: aliceblue;
         padding-top: 20px;
         flex-direction: column;
         justify-content: center;
-        gap: 10px ;
-        align-items:center;
+        gap: 10px;
+        align-items: center;
     }
 }
-
-
